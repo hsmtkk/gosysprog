@@ -4,10 +4,15 @@ type: docker
 name: default
 
 steps:
-  - name: hello
+  - name: ch1
     image: golang:1.15
     commands:
-      - cd hello
+      - cd ch1
       - go run main.go
       - cd hello
+      - go test
+  - name: ch2
+    image: golang:1.15
+    commands:
+      - cd ch2/handle
       - go test
