@@ -4,7 +4,13 @@ type: docker
 name: default
 
 steps:
+  - name: dummy
+    image: golang:1.15
+    commands:
+      - echo dummy step
   - name: ch1
+    depends_on:
+      - dummy
     image: golang:1.15
     commands:
       - cd ch1
@@ -13,10 +19,14 @@ steps:
       - go test
   - name: ch2
     image: golang:1.15
+    depends_on:
+      - dummy
     commands:
       - cd ch2/handle
       - go test
   - name: ch3
+    depends_on:
+      - dummy
     image: golang:1.15
     commands:
       - cd ch3/copy
