@@ -16,3 +16,8 @@ steps:
     commands:
       - cd ch2/handle
       - go test
+  - name: ch3
+    image: golang:1.15
+    commands:
+      - cd ch3/copy
+      - go test
