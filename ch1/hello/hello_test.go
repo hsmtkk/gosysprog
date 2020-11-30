@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/hsmtkk/gosysprog/hello/hello"
+	"github.com/hsmtkk/gosysprog/ch1/hello"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/hsmtkk/gosysprog/hello/hello"
+	"github.com/hsmtkk/gosysprog/ch1/hello"
 )
 
 func main() {
