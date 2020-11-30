@@ -21,3 +21,7 @@ steps:
     commands:
       - cd ch3/copy
       - go test
+      - cd ../random
+      - go run main.go sample.dat 1024
+      - cd random
+      - go test
