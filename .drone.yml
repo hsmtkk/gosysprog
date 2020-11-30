@@ -1,0 +1,12 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: hello
+    image: golang:1.15
+    commands:
+      - cd hello
+      - go run main.go
+      - cd hello/hello
