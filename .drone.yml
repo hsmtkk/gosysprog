@@ -9,4 +9,5 @@ steps:
     commands:
       - cd hello
       - go run main.go
-      - cd hello/hello
+      - cd hello
+      - go test
